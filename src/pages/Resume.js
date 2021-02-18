@@ -1,52 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Document, Page } from 'react-pdf';
 import Main from '../layouts/Main';
-
-import Education from '../components/Resume/Education';
-import Experience from '../components/Resume/Experience';
-import Skills from '../components/Resume/Skills';
-import Courses from '../components/Resume/Courses';
-import References from '../components/Resume/References';
-
-import courses from '../data/resume/courses';
-import degrees from '../data/resume/degrees';
-import positions from '../data/resume/positions';
-import { skills, categories } from '../data/resume/skills';
-
-const sections = [
-  'Education',
-  'Experience',
-  'Skills',
-  'Courses',
-  'References',
-];
+import ResumePDF from '../data/resume/Colin_Stuart_Resume.pdf';
 
 const Resume = () => (
   <Main
     title="Resume"
-    description="Michael D'Angelo's Resume. Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet Labs, and Facebook."
+    description="Colin Stuart's Resume."
   >
-    <article className="post" id="resume">
-      <header>
-        <div className="title">
-          <h2 data-testid="heading"><Link to="resume">Resume</Link></h2>
-          <div className="link-container">
-            {sections.map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>))}
-          </div>
-
-        </div>
-      </header>
-      <Education data={degrees} />
-      <Experience data={positions} />
-      <Skills skills={skills} categories={categories} />
-      <Courses data={courses} />
-      <References />
-
-    </article>
+    <p1 style={
+      {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '5vh',
+      }
+    }
+    >
+      <a href="https://github.com/mldangelo/personal-site/tree/main/src/data/resume/Colin_Stuart_Resume.pdf">
+        Download a PDF of my resume here.
+      </a>
+    </p1>
+    <div style={
+      {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+      }
+    }
+    >
+      <Document file={ResumePDF}>
+        <Page pageNumber={1} />
+      </Document>
+    </div>
   </Main>
 );
 

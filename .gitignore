@@ -45,5 +45,8 @@ build/
 # OSX
 .DS_Store
 
+# IntelliJ
+.idea
+
 # Nohup
 nohup.out
