@@ -17,7 +17,7 @@ const Resume = () => (
       }
     }
     >
-      <a href="https://github.com/mldangelo/personal-site/tree/main/src/data/resume/Colin_Stuart_Resume.pdf">
+      <a href="https://github.com/colin-stuart/personal-site/tree/main/src/data/resume/Colin_Stuart_Resume.pdf">
         Download a PDF of my resume here.
       </a>
     </p1>
