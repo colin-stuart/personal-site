@@ -13,7 +13,7 @@ const SideBar = () => (
       </Link>
       <header>
         <h2>Colin Stuart</h2>
-        <p><a href="mailto:colindonstuart@gmail.com">colindonstuart@gmail.com</a></p>
+        <p><a href="mailto:me@colinstu.com">me@colinstu.com</a></p>
       </header>
     </section>
 
@@ -30,7 +30,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Colin Stuart <Link to="/">colin-stuart.com</Link>.</p>
+      <p className="copyright">&copy; Colin Stuart <Link to="/">colinstu.com</Link>.</p>
     </section>
   </section>
 );

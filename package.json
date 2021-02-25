@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
-  "version": "1.0.1",
-  "homepage": "https://colin-stuart.com/",
+  "version": "1.0.2",
+  "homepage": "https://colinstu.com/",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
-    "eslint": "^7.19.0",
+    "eslint": "^7.20.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",

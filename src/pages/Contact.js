@@ -7,7 +7,7 @@ import ContactIcons from '../components/Contact/ContactIcons';
 const Contact = () => (
   <Main
     title="Contact"
-    description="Contact Colin Stuart via email @ colindonstuart@gmail.com"
+    description="Contact Colin Stuart via email @ me@colinstu.com"
   >
     <article className="post" id="contact">
       <header>
@@ -16,7 +16,7 @@ const Contact = () => (
         </div>
       </header>
       <div className="email-at">
-        <p>Feel free to get in touch. You can email me at colindonstuart@gmail.com </p>
+        <p>Feel free to get in touch. You can email me at me@colinstu.com </p>
       </div>
       <ContactIcons />
     </article>
